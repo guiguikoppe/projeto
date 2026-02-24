@@ -63,15 +63,9 @@ body {
 
     /* Fundo base */
     linear-gradient(180deg, rgb(12, 6, 8), rgb(6, 6, 10));
-
-  animation: fadePage 1s ease forwards;
 }
 
-/* ANIMAÇÃO DE ENTRADA */
-@keyframes fadePage {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+
 
 /* HEADER */
 /* HEADER COM IMAGEM */
@@ -298,4 +292,59 @@ body {
   .intro {
     grid-template-columns: 1fr;
   }
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  background: linear-gradient(135deg, var(--vermelho), #ff4d5a);
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 10px 25px rgba(227,6,19,.5);
+  transition: .3s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* MENU ESCONDIDO */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 220px;
+  height: 100vh;
+  background: rgba(15,15,20,.95);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  transition: .5s ease;
+  z-index: 1000;
+  border-left: 1px solid var(--borda);
+}
+
+/* MENU ATIVO */
+.menu-lateral.ativo {
+  right: 0;
+}
+
+.menu-lateral a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+}
+
+.menu-lateral a:hover {
+  background: var(--vermelho);
 }

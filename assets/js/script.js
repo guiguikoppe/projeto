@@ -22,3 +22,10 @@ window.addEventListener("scroll", () => {
 btnTopo.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const menuLateral = document.getElementById("menuLateral");
+
+menuToggle.addEventListener("click", () => {
+  menuLateral.classList.toggle("ativo");
+});
