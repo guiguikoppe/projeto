@@ -1,100 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>São Paulo</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>São Paulo FC | Home</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-	<div class="header">
 
-		<h1>São Paulo</h1>
+<header class="header reveal">
+  <h1>São Paulo Futebol Clube</h1>
+   <img src="assets/img/Design sem nome (2).png" alt="Torcida do São Paulo FC" />
+  <p class="slogan">O clube da fé, tradição e títulos</p>
+</header>
 
-	</div>
-	<div class="subtitle">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="pages/produtos.html">PRODUTOS</a></li>
-			<li><a href="pages/contato.html">CONTATO</a></li>
-		</ul>
-	</div>
-	</div>
-	<div class="intro">
-		<div class="text">
-			<p>
-			<h3> Fundado em 25 de janeiro de 1930 e marcado por histórias de superação, como a refundação do clube em
-				1935 ou os
-				tempos difíceis da construção do MorumBIS, o Tricolor Mais Querido do planeta é o único clube brasileiro
-				a ter
-				conquistado a América e o Mundo por três vezes. É ainda o único Tricampeão consecutivo do Campeonato
-				Brasileiro
-				e o primeiro a conquistá-lo por seis vezes. Hexacampeão Brasileiro.</h3>
-			</p><br>
-		</div>
-		<div class="img">
-			<img src="data:image/png;base64,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"
-				alt="São Paulo">
-		</div>
-		<div class="mundial">
-			<h2><strong>MUNDIAIS</strong></h2>
-			<ul>
+<nav class="subtitle reveal">
+  <ul>
+    <li><a href="index.html" class="ativo">Home</a></li>
+    <li><a href="pages/elenco.html">Elenco</a></li>
+    <li><a href="pages/contato.html">Contato</a></li>
+  </ul>
+</nav>
 
-				<p>
-					<li>Copa do Mundo de Clubes da FIFA (1) 2005 <br></li>
-					<li>Copa Intercontinental (2) 1992 e 1993
-				</p>
-		</div>
-		</li>
-		</ul>
-		<div class="continentais">
-			<h2> <strong>CONTINENTAIS</strong></h2>
-			<ul>
-				<P>
-					<li>Copa Libertadores da América (3) 1992, 1993 e 2005</li>
-					<li>Copa Sul-Americana (1) 2012<br></li>
-					<li>Recopa Sul-Americana (2) 1993 e 1994<br></li>
-					<li>Supercopa Libertadores (1) 1993<br></li>
-					<li>Copa Conmebol (1) 1994<br></li>
-					<li>Copa Master da Conmebol (1) 1996
-				</P>
-		</div>
-		</li>
-		</ul>
+<main class="intro reveal">
+  <div>
+    <h2>Sobre o Tricolor</h2>
+    <p>
+      Fundado em 1930, o São Paulo FC é um dos clubes mais tradicionais do mundo.
+      Reconhecido por sua história vitoriosa, grandes ídolos e uma torcida apaixonada.
+    </p>
+    <p>
+      Aqui você encontra produtos oficiais, novidades do clube e um espaço para entrar em contato.
+    </p>
+  </div>
 
-		<div class="nacionais">
-			<h2> <strong>NACIONAIS</strong> </h2>
-			<ul>
-				<P>
-					<li>Campeonato Brasileiro (6) 1977, 1986, 1991, 2006, 2007 e 2008<br></li>
-					<li>Copa do Brasil (1) 2023<br></li>
-					<li>Supercopa Rei (1) 2024
-				</P>
-		</div>
-		</li>
-		</ul>
+  <img src="assets/img/torcidaclaro.jfif" alt="Torcida do São Paulo FC" />
+</main>
 
-		<div class="ESTADUAIS">
-			<h2> <strong>ESTADUAIS</strong></h2>
-			<ul>
-				<P>
-					<li>Campeonato Paulista (22) 1931, 1943, 1945, 1946, 1948, 1949,<br> 1953, 1957, 1970,
-						1971,
-						1975, 1980, 1981, 1985, 1987, 1989,<br> 1991,1992, 1998, 2000, 2005 e 2021<br></li>
-					<li>Supercampeonato Paulista (1) 2002<br>
-				</P>
-		</div>
-		</li>
+<section class="titulos reveal">
+  <div class="card">
+    <h3>🏆 Mundiais</h3>
+    <p>1992, 1993, 2005</p>
+  </div>
+  <div class="card">
+    <h3>🌎 Libertadores</h3>
+    <p>1992, 1993, 2005</p>
+  </div>
+  <div class="card">
+    <h3>🔰 Brasileirão</h3>
+    <p>6 títulos</p>
+  </div>
+  <div class="card">
+    <h3>🏟️ Morumbi</h3>
+    <p>Mais de 60 mil lugares</p>
+  </div>
+</section>
 
+<section class="titulos reveal">
+  <div class="card">
+    <h3>📜 História do Clube</h3>
+    <p>
+      Fundado em 1930, o São Paulo Futebol Clube construiu uma trajetória marcada
+      por grandes conquistas, craques históricos e uma torcida apaixonada.
+    </p>
+  </div>
 
+  <div class="card">
+    <h3>⭐ Ídolos Eternos</h3>
+    <p>
+      Rogério Ceni, Raí, Cafu e muitos outros nomes marcaram gerações
+      e fizeram história com a camisa tricolor.
+    </p>
+  </div>
 
+  <div class="card">
+    <h3>🧠 Centro de Treinamento</h3>
+    <p>
+      Estrutura moderna para formação de atletas, com foco em alto rendimento,
+      saúde e desenvolvimento técnico.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🌎 Torcida Global</h3>
+    <p>
+      Milhões de torcedores espalhados pelo Brasil e pelo mundo,
+      levando o Tricolor para todos os continentes.
+    </p>
+  </div>
+</section>
+    <h3>🔥 Nossa Torcida</h3>
+    <p>
+      A torcida tricolor é conhecida pela paixão, apoio incondicional e presença nos estádios.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>📅 Próximos Jogos</h3>
+    <p>
+      Fique ligado no calendário de partidas e acompanhe o time em todas as competições.
+    </p>
+  </div>
+</section>
+
+<button id="btnTopo">⬆</button>
+<script src="assets/js/script.js"></script>
 </body>
-
-</body>
-
 </html>
