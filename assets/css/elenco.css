@@ -1,0 +1,76 @@
+.pagina-elenco .elenco-container {
+  max-width: 1200px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+}
+
+.pagina-elenco .elenco-container h2 {
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  border-left: 4px solid var(--vermelho);
+  padding-left: 12px;
+}
+
+/* GRID MAIS COMPACTO */
+.pagina-elenco .elenco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+/* CARD MENOR */
+.pagina-elenco .jogador {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.18),
+    rgba(255,255,255,.06)
+  );
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: .25s ease;
+  font-size: .8rem;
+}
+
+.pagina-elenco .jogador:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+  border-color: var(--vermelho);
+}
+
+/* FOTO MENOR */
+.pagina-elenco .jogador img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  border: 2px solid var(--borda);
+}
+
+.pagina-elenco .jogador h3 {
+  font-size: .85rem;
+  margin-bottom: 2px;
+}
+
+.pagina-elenco .jogador p {
+  opacity: .8;
+  font-size: .75rem;
+}
+
+/* RESPONSIVO EXTRA COMPACTO */
+@media (max-width: 600px) {
+  .pagina-elenco .elenco-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .pagina-elenco .jogador img {
+    width: 65px;
+    height: 65px;
+  }
+}
