@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | São Paulo FC</title>
+  <title>Títulos | São Paulo FC</title>
 
   <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/titulos.css">
-
+  <link rel="stylesheet" href="../assets/css/titulos.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header reveal">
   <h1>São Paulo Futebol Clube</h1>
-   <img src="../assets/img/Design sem nome (2).png" alt="Torcida do São Paulo FC" />
+  <img src="../assets/img/Design sem nome (2).png" alt="Torcida do São Paulo FC" />
   <p class="slogan">O clube da fé, tradição e títulos</p>
 </header>
 
@@ -26,60 +25,45 @@
 <nav class="menu-lateral" id="menuLateral">
   <a href="../index.html">Home</a>
   <a href="elenco.html">Elenco</a>
-  <a href="titulos.html">Titulos</a>
+  <a href="titulos.html" class="ativo">Títulos</a>
 </nav>
 
-<section class="titulos reveal">
-  <div class="card">
-    <h3>📜 História do Clube</h3>
-    <p>
-      Fundado em 1930, o São Paulo Futebol Clube construiu uma trajetória marcada
-      por grandes conquistas, craques históricos e uma torcida apaixonada.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>⭐ Ídolos Eternos</h3>
-    <p>
-      Rogério Ceni, Raí, Cafu e muitos outros nomes marcaram gerações
-      e fizeram história com a camisa tricolor.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>🧠 Centro de Treinamento</h3>
-    <p>
-      Estrutura moderna para formação de atletas, com foco em alto rendimento,
-      saúde e desenvolvimento técnico.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>🌎 Torcida Global</h3>
-    <p>
-      Milhões de torcedores espalhados pelo Brasil e pelo mundo,
-      levando o Tricolor para todos os continentes.
-    </p>
+<!-- SEÇÃO DE TÍTULOS -->
+<section class="titulos-page">
+  <div class="container">
+    <h2 class="section-title reveal">🏆 Nossas Conquistas</h2>
+    <p class="section-subtitle reveal">Uma história repleta de glórias e títulos inesquecíveis</p>
+    
+    <!-- Cards de Títulos -->
+    <div class="titulos-grid" id="titulosContainer">
+      <!-- Os cards serão gerados pelo JavaScript -->
+    </div>
   </div>
 </section>
-    <h3>🔥 Nossa Torcida</h3>
-    <p>
-      A torcida tricolor é conhecida pela paixão, apoio incondicional e presença nos estádios.
-    </p>
-  </div>
 
-  <div class="card">
-    <h3>📅 Próximos Jogos</h3>
-    <p>
-      Fique ligado no calendário de partidas e acompanhe o time em todas as competições.
-    </p>
+<!-- ESTATÍSTICAS DO CLUBE -->
+<section class="estatisticas-clube reveal">
+  <div class="container">
+    <h2 class="section-title">📊 Números do Tricolor</h2>
+    <div class="stats-grid" id="statsContainer">
+      <!-- Estatísticas geradas pelo JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- MOMENTOS HISTÓRICOS -->
+<section class="momentos-historicos reveal">
+  <div class="container">
+    <h2 class="section-title">⏳ Momentos Históricos</h2>
+    <div class="timeline" id="timelineContainer">
+      <!-- Timeline gerada pelo JavaScript -->
+    </div>
   </div>
 </section>
 
 <button id="btnTopo">⬆</button>
-<script src="assets/js/script.js"></script>
 
-<button id="btnTopo">⬆</button>
 <script src="../assets/js/script.js"></script>
+<script src="../assets/js/titulos.js"></script>
 </body>
 </html>
