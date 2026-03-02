@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elenco 2026 | São Paulo FC</title>
 
-  <link rel="stylesheet" href="../assets/css/elenco.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css"> <!-- CSS padrão primeiro -->
+  <link rel="stylesheet" href="../assets/css/elenco.css"> <!-- CSS específico do elenco -->
+  <link rel="stylesheet" href="../assets/css/elenco-modal.css"> <!-- CSS do modal -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header reveal">
   <h1>São Paulo Futebol Clube</h1>
-   <img src="../assets/img/Design sem nome (2).png" alt="Torcida do São Paulo FC" />
+  <img src="../assets/img/Design sem nome (2).png" alt="Torcida do São Paulo FC" />
   <p class="slogan">O clube da fé, tradição e títulos</p>
 </header>
 
@@ -28,10 +29,8 @@
   <a href="titulos.html">Titulos</a>
 </nav>
 
-
-<body class="pagina-elenco">
+<!-- CONTEÚDO DA PÁGINA ELENCO -->
 <section class="elenco-container">
-
   <!-- GOLEIROS -->
   <h2>🧤 Goleiros</h2>
   <div class="elenco-grid">
@@ -92,12 +91,18 @@
     <div class="jogador"><img src="../assets/img/ryan francisco.jfif" alt="Ryan Francisco"><h3>Ryan Francisco</h3><p>Atacante</p></div>
   </div>
 
-
-<h2>🧠 Treinador</h2>
-<div class="jogador"><img src="../assets/img/hernan crespo.jfif" alt="Hernan Crespo"><h3> Hernan Crespo</h3><p>Treinador</p></div>
+  <h2>🧠 Treinador</h2>
+  <div class="jogador">
+    <img src="../assets/img/hernan crespo.jfif" alt="Hernan Crespo">
+    <h3>Hernan Crespo</h3>
+    <p>Treinador</p>
+  </div>
 </section>
-</body>
+
 <button id="btnTopo">⬆</button>
+
+<!-- Scripts -->
 <script src="../assets/js/script.js"></script>
+<script src="../assets/js/elenco.js"></script>
 </body>
 </html>
